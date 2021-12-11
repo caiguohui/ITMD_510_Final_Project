@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="776.0" prefWidth="920.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.iit.caiguohui.controllers.AdminController">
+	<children>
+		<Button fx:id="searchBtn" layoutX="520.0" layoutY="33.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="62.0" text="Search">
+         <styleClass>
+            <String fx:value="btn" />
+            <String fx:value="btn-default" />
+         </styleClass></Button>
+		<Label layoutX="53.0" layoutY="44.0" text="Order No" />
+		<TextField fx:id="orderNoField" layoutX="116.0" layoutY="40.0" prefHeight="26.0" prefWidth="140.0" />
+		<Label layoutX="286.0" layoutY="44.0" text="Phone" />
+		<TextField fx:id="phoneField" layoutX="349.0" layoutY="40.0" prefHeight="26.0" prefWidth="140.0" />
+		<TableView fx:id="tableView" layoutX="45.0" layoutY="81.0" prefHeight="573.0" prefWidth="839.0">
+			<columns>
+				<TableColumn fx:id="orderNoColumn" prefWidth="115.0" text="Order No" />
+				<TableColumn fx:id="nameColumn" prefWidth="158.0" text="Name" />
+				<TableColumn fx:id="phoneColumn" prefWidth="242.0" text="Phone" />
+				<TableColumn fx:id="amountColumn" prefWidth="174.0" text="Amount" />
+				<TableColumn fx:id="timeColumn" prefWidth="147.0" text="Time" />
+			</columns>
+		</TableView>
+      <Label layoutX="60.0" layoutY="676.0" text="Order No" />
+      <TextField fx:id="orderNoUpdateField" disable="true" layoutX="123.0" layoutY="672.0" prefHeight="26.0" prefWidth="140.0" />
+      <Label layoutX="293.0" layoutY="676.0" text="Amount" />
+      <TextField fx:id="nameUpdateField" layoutX="356.0" layoutY="672.0" prefHeight="26.0" prefWidth="140.0" />
+      <Label layoutX="60.0" layoutY="716.0" text="Name" />
+      <TextField fx:id="phoneUpdateField" layoutX="123.0" layoutY="712.0" prefHeight="26.0" prefWidth="140.0" />
+      <Label layoutX="293.0" layoutY="716.0" text="Phone" />
+      <TextField fx:id="amountUpdateField" layoutX="356.0" layoutY="712.0" prefHeight="26.0" prefWidth="140.0" />
+      <Button fx:id="updateBtn" layoutX="533.0" layoutY="676.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="115.0" text="Update">
+         <styleClass>
+            <String fx:value="btn" />
+            <String fx:value="btn-info" />
+         </styleClass></Button>
+      <Button fx:id="deleteBtn" layoutX="698.0" layoutY="676.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="115.0" text="Delete">
+         <styleClass>
+            <String fx:value="btn" />
+            <String fx:value="btn-danger" />
+         </styleClass></Button>
+	</children>
+</AnchorPane>
